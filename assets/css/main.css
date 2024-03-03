@@ -1,0 +1,161 @@
+/*==========Root==============*/
+:root{
+    --primary-font:"Roboto Mono", monospace;
+    --services-font:"Anta", sans-serif;
+}
+/*==========Nav==============*/
+nav{
+    background-color: rgba(62,191,255,255) !important;
+}
+.nav-item{
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    position: relative;
+}
+.nav-link:hover{
+    color: rgb(1, 1, 1) !important;
+    
+}
+.nav-link:hover::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right:50%;
+    width: 35%;
+    height: 4px; 
+    background-color: rgb(6, 6, 6) 
+}
+
+/*==========About==============*/
+
+#about{
+    background-color: rgba(62,191,255,255);
+    position: relative;
+}
+#about i{
+    font-size:100px;
+    position: absolute;
+    top: 55%;
+    left: 0%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+}
+.about{
+    height: 100vh;
+    background-image: url(../Images/image-header.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*==========Services==============*/
+
+#services{
+    margin: 0px !important;
+    background-color:rgba(255, 228, 196, 0.429);
+    overflow: hidden;
+}
+
+
+h2{
+    font-style: var(--services-font);
+}
+p{
+    font-style: var(--primary-font);
+}
+.img-fluid{
+    margin-right: -1%;
+}
+.imgs{
+    width:100%;
+    
+}
+.services-text-h2{
+    color:rgb(26, 98, 26);
+}
+.services-text-p{
+    color:rgb(51, 146, 51);
+}
+.services-text-h2-2{
+    color:rgb(59, 65, 85);
+}
+.services-text-p-2{
+    color:rgb(35, 55, 122);
+
+}
+/*==========Feedback==============*/
+.card{
+    border: none;
+}
+.card img{
+    width:25%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/*============Contact===========*/
+
+#contact{
+    background-color: rgb(32, 184, 240);
+}
+
+#contact .container-fluid{
+    margin: 0px 0px !important;
+    width:100% !important;
+}
+#contact img{
+    width:100%;
+}
+h4{
+    font-family: var(--primary-font);
+}
+i:hover{
+    cursor: pointer;
+}
+.attribution a{
+    text-decoration: none;
+    color: white;
+}
+/*==========MediaQuery==============*/
+@media (max-width:1200px) {
+    #about i{
+        top: 52%;
+    }
+    #contact img{
+        width:70%;
+    }
+}
+@media (max-width:992px) {
+    #about i{
+        top: 52%;
+    }
+    
+}
+@media (max-width:768px) {
+    #about i{
+        top: 52%;
+    }
+    #contact img{
+        width:60%;
+    }
+    .nav-link:hover::after {
+        left:3%;
+        width: 10%;
+    }
+}
+@media (max-width:576px) {
+    #about i{
+        font-size:80px;
+    }
+    #contact img{
+        width:50%;
+    }
+
+}
